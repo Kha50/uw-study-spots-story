@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>UW Study Spots — A GeoNarrative</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- # "Mapbox + Bootstrap" -->
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+
+  <!-- # "Your CSS" -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- # "Scroll + Mapbox JS" -->
+  <script src="https://unpkg.com/scrollama"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+
+  <!-- # "Bootstrap JS" -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- # "COVER SECTION" -->
+  <section id="cover">
+    <div id="cover-bg"></div>
+
+    <div id="intro">
+      <h1>UW Study Spots</h1>
+      <h5>A scroll story of where Huskies actually get work done</h5>
+
+      <p>
+        This GeoNarrative maps a small set of UW Seattle study locations and how they “feel”
+        (quiet vs. social, solo vs. group-friendly). Scroll to explore different map views.
+      </p>
+
+      <p class="small mb-0">
+        Built with Mapbox GL JS + Scrollama.
+      </p>
+
+      <!-- # "UW LOGO + COURSE INFO" -->
+      <div class="footnote">
+        <span>GEOG 458 • Lab 7</span>
+
+        <a target="_blank" href="https://www.washington.edu">
+
+        <img src="img/uw-logo.png" width="50" alt="UW Logo">
+
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- # "GEONARRATIVE SECTION" -->
+  <section id="geonarrative">
+
+    <div id="storyboard">
+
+      <!-- # "MAP CONTAINER" -->
+      <div id="map"></div>
+
+      <!-- # "HUD DISPLAY" -->
+      <div id="hud">
+        <div class="hud-title">Now showing</div>
+        <div id="hud-text">Cover</div>
+      </div>
+
+    </div>
+
+
+    <!-- # "SCENE 0 INTRO" -->
+    <article class="scene" data-scene="0">
+      <div class="cardish">
+
+        <h2>Welcome to UW Study Spots</h2>
+
+        <p>
+          We start centered on UW Seattle. Study locations appear as points.
+          Click a point to see the vibe + what it’s best for.
+        </p>
+
+        <p class="tip">
+          Tip: scroll slowly—each scene changes the map.
+        </p>
+
+      </div>
+    </article>
+
+
+    <!-- # "SCENE 1 HEATMAP VIEW" -->
+    <article class="scene" data-scene="1">
+      <div class="cardish">
+
+        <h2>Where are the clusters?</h2>
+
+        <p>
+          Switching to a <b>heatmap</b> shows where study options concentrate around central campus.
+        </p>
+
+      </div>
+    </article>
+
+
+    <!-- # "SCENE 2 QUIET SPOTS FILTER" -->
+    <article class="scene" data-scene="2">
+      <div class="cardish">
+
+        <h2>Quiet vs social</h2>
+
+        <p>
+          Now we filter to <b>quiet</b> spots and style them differently.
+          Use this view when you want deep focus (midterms, writing, problem sets).
+        </p>
+
+      </div>
+    </article>
+
+
+    <!-- # "SCENE 3 RECOMMENDATION VIEW" -->
+    <article class="scene" data-scene="3">
+      <div class="cardish">
+
+        <h2>Pick a spot for your task</h2>
+
+        <ul>
+          <li><b>Solo deep work</b>: quiet libraries</li>
+          <li><b>Group work</b>: HUB / open seating</li>
+          <li><b>Quick grind</b>: central, easy access</li>
+        </ul>
+
+        <p class="mb-0">
+          End of story — scroll to the footer.
+        </p>
+
+      </div>
+    </article>
+
+  </section>
+
+
+
+  <!-- # "FOOTER ABOUT SECTION" -->
+  <section id="footer" class="py-5">
+
+    <div class="container">
+
+      <div class="row text-white">
+
+
+        <!-- # "ABOUT PROJECT TEXT" -->
+        <div class="col-md-6">
+
+          <h4>About This Project</h4>
+
+          <p>
+            This GeoNarrative a web-based storytelling application that explores popular study locations across the University of Washington campus.
+            It demonstrates how spatial data and interactive web maps can help students discover environments
+            that match their study needs.
+          </p>
+
+          <p>
+            This project was created as part of GEOG 458: Digital Geography using Mapbox GL JS and Scrollama.
+          </p>
+
+        </div>
+
+
+        <!-- # "AUTHOR INFORMATION" -->
+        <div class="col-md-6 text-md-right">
+
+          <h4>Author</h4>
+
+          <p>
+            Kenneth Ha<br>
+            GEOG 458 — Digital Geography<br>
+            University of Washington
+          </p>
+
+
+          <!-- # "GITHUB LINK BUTTON" -->
+          <p>
+            <a href="https://github.com/Kha50"
+               target="_blank"
+               class="btn btn-light btn-sm">
+
+              View GitHub
+
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- # "FOOTER DIVIDER" -->
+      <hr style="border-color: rgba(255,255,255,0.3);">
+
+
+      <!-- # "COPYRIGHT LINE" -->
+      <div class="text-center text-white">
+
+        <small>
+          © 2026 Kenneth Ha — GEOG 458 — University of Washington
+        </small>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- # "MAPBOX TOKEN CONFIGURATION" -->
+  <script>
+    window.MAPBOX_TOKEN = "";
+  </script>
+
+
+  <!-- # "MAIN JAVASCRIPT FILE" -->
+  <script src="js/main.js"></script>
+
+
+</body>
+</html>

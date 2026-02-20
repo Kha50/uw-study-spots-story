@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Suzzallo Library",
+        "vibe": "Quiet / iconic reading room energy",
+        "best_for": "Deep solo work",
+        "noise": "quiet"
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.308111, 47.655694] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Odegaard Undergraduate Library (OUG)",
+        "vibe": "Busy / flexible seating",
+        "best_for": "General study + group prep",
+        "noise": "mixed"
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.310306, 47.6565] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Foster Business Library",
+        "vibe": "Polished / quiet pockets",
+        "best_for": "Interviews, writing, focused study",
+        "noise": "quiet"
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.3086327, 47.6592586] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Engineering Library",
+        "vibe": "Practical / close to labs",
+        "best_for": "Problem sets, technical work",
+        "noise": "mixed"
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.3046518, 47.6547723] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mary Gates Hall",
+        "vibe": "Central / easy meet-up spot",
+        "best_for": "Between-class sessions",
+        "noise": "mixed"
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.3078056, 47.6550] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Husky Union Building (HUB)",
+        "vibe": "Social / food nearby",
+        "best_for": "Group work + casual study",
+        "noise": "social"
+      },
+      "geometry": { "type": "Point", "coordinates": [-122.3050, 47.6558] }
+    }
+  ]
+}
